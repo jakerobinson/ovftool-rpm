@@ -1,11 +1,13 @@
 Summary: VMware OVFTool
-Name: ovftool
+Name: VMware-ovftool
 Version: 3.5.0
 Release: 1
+Distribution: lin
 Group: VMware/OVFTool
 License: VMware
 Source: %{expand:%%(pwd)}
 BuildRoot: %{_topdir}/BUILD/%{name}-%{version}-%{release}
+%define _rpmfilename %{ARCH}/%%{NAME}-%%{VERSION}-%%{RELEASE}-%%{DISTRIBUTION}.%%{ARCH}.rpm
 
 %description
 VMware OVFTool
